@@ -28,6 +28,13 @@
   </tbody>
 </table>
 <br>
+<%= "The Average price of all the products is #{Product.average('price')}" %>
+<br>
+<%= "The Maximum price of all the products is #{Product.maximum('price')}" %>
+<br>
+<%= "The Total number of unique products is #{Product.count('id')}" %>
+<br>
+<%= "The Total number of quantities stocked is #{Product.sum('stock_quantity')}" %>
 <br>
 <% 100.times do%>
 <p>Chunky Bacon!</p>
